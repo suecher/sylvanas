@@ -14,6 +14,7 @@ var Player = new keystone.List('Player');
 Player.add({
 	trueName:{type:String,wysiwyg:true,height:200},
 	name:{type:String,required:true},
+	password:{type:Types.Password},
 	mobile:{ type: String },
 	motto:{ type: String },
 	identity:{type:String }

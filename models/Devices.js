@@ -13,11 +13,11 @@ var Devices = new keystone.List('Devices',{
 
 Devices.add({
 	target:{ type: Types.Relationship, ref: 'Target', index: true },
-	name:{type:String},
-	username:{type:String},
+	name:{type:String },
+	username:{type:String },
+	password:{type:Types.Password ,workFactor:10},
 	matchId:{ type: Types.Relationship, ref: 'Match', index: true }
 });
 
-Devices.defaultColumns = 'matchId, flowId|20%, playerId|20%, bow|20%,picture,number,archeryList,totalPoint,createTime,remarks,devices';
+Devices.defaultColumns = 'matchId,flowId|20%, playerId|20%, bow|20%,picture,number,archeryList,totalPoint,createTime,remarks,devices';
 Devices.register();
-
