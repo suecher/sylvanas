@@ -12,7 +12,7 @@ var Devices = new keystone.List('Devices',{
 
 
 Devices.add({
-	target:{ type: Types.Relationship, ref: 'Target', index: true },
+	target:{ type: Types.Relationship, ref: 'Target', many: true },
 	name:{type:String },
 	username:{type:String },
 	password:{type:Types.Password ,workFactor:10},

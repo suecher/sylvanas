@@ -12,6 +12,7 @@ var ScoreSingle = new keystone.List('ScoreSingle',{
 
 ScoreSingle.add({
 	matchId:{ type: Types.Relationship, ref: 'Match', index: true },
+	score:{type:Types.Relationship,ref:'Score',index:true},
 	flowId:{type:Types.Relationship,ref:'MatchFlow',index:true},
 	playerId:{ type: Types.Relationship, ref: 'Player', index: true },
 	bow:{ type: Types.Relationship, ref: 'Bow', index: true },

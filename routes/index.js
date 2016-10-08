@@ -48,6 +48,15 @@ exports = module.exports = function (app) {
 	app.all('/api/devices/login',routes.views.devices_login);
 	app.all('/api/devices/target',routes.views.devices_target);
 	app.get('/api/test',routes.views.interface_test);
+	
+	
+	app.post('/api/player/login',routes.views.player_login);
+	
+	app.post('/api/deviceforget',routes.views.devicefortarget);
+	
+	
+	
+	
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
 

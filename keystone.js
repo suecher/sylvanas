@@ -61,8 +61,8 @@ keystone.set('email locals', {
 	},
 });
 
-keystone.set('port', 1000);
-//keystone.set('ip', '192.168.1.254');
+keystone.set('port', 2000);
+keystone.set('ip', '192.168.1.254');
 
 // Load your project's email test routes
 keystone.set('email tests', require('./routes/emails'));
